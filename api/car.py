@@ -15,7 +15,7 @@ def vehicle_detect(img, car_id):
     # 将Base64编码后的图像数据放入字典中，作为POST的请求参数
     params = {"image": base64_image}
     # API认证的访问令牌
-    access_token = 'API认证的访问令牌'
+    access_token = '24.57039292ace6818d4cc9af39a1d16576.2592000.1722687585.282335-89936434'
     # 将访问令牌附加到请求URL中
     request_url_id = request_url_id + "?access_token=" + access_token
     request_url_num = request_url_num + "?access_token=" + access_token

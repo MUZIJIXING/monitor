@@ -1,3 +1,4 @@
+- 为了老师方便运行检查，将视频文件上传。
 - pip install opencv-python
 - pip install PyQt5
 - pip install pyqt5-tools
