@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>895</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>400</y>
+     <width>141</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:rgb(225,225,225);
+	border-radius:12px;
+}
+QPushButton:hover {
+            background-color: #87CEEB; /* 天蓝色背景 */
+            color: black;
+}</string>
+   </property>
+   <property name="text">
+    <string>人员检测</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>400</y>
+     <width>141</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:rgb(225,225,225);
+	border-radius:12px;
+}
+QPushButton:hover {
+            background-color: #87CEEB; /* 天蓝色背景 */
+            color: black;
+}</string>
+   </property>
+   <property name="text">
+    <string>车辆检测</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="s.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>goin_people()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>goin_car()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>630</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goin_people()</slot>
+  <slot>goin_car()</slot>
+ </slots>
+</ui>

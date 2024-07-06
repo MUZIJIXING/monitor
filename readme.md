@@ -1,0 +1,6 @@
+- pip install opencv-python
+- pip install PyQt5
+- pip install pyqt5-tools
+- pyrcc5 -o resources.py resources.qrc
+- pyuic5 -o UIcar.py UIcar.ui
+- pyuic5 -o UIpeople.py UIpeople.ui
